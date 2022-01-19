@@ -37,7 +37,7 @@ public class loginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kategori);
+        setContentView(R.layout.activity_login);
 
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
@@ -50,6 +50,7 @@ public class loginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SetValidation();
+                loginButton();
             }
         });
 
@@ -92,6 +93,35 @@ public class loginActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Successfully", Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    public void register(View v) {
+        startActivity(new Intent(loginActivity.this, registerActivity.class));
+    }
+
+    public void loginButton() {
+        String[] emaildb = {"dimas@gmail.com", "andre@gmail.com"};
+        String[] passwddb = {"123123", "321321"};
+        String emailnya = email.getText().toString();
+        String passwdnya = password.getText().toString();
+        System.out.println(email.getText().toString());
+        System.out.println(password.getText().toString());
+
+//        if (emailnya.equals(emaildb[0]) && passwdnya.equals(passwddb[0])){
+//            startActivity(new Intent(loginActivity.this, dashboardActivity.class));
+//        }
+//        else {
+//            startActivity(new Intent(loginActivity.this, loginActivity.class));
+//        }
+        for (int i=0; i<2; i++){
+            if (emailnya.equals(emaildb[i]) && passwdnya.equals(passwddb[i])){
+                startActivity(new Intent(loginActivity.this, dashboardActivity.class));
+                break;
+            }
+            else {
+                startActivity(new Intent(loginActivity.this, loginActivity.class));
+            }
+        }
     }
 
 }

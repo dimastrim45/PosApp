@@ -8,7 +8,7 @@
     android:background="@drawable/gradien_btn"
     android:gravity="center"
     android:padding="16dp"
-    tools:context=".LoginActivity">
+    tools:context=".loginActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -49,7 +49,8 @@
                         android:inputType="textEmailAddress"
                         android:maxLines="1"
                         android:paddingStart="5dp"
-                        android:singleLine="true" />
+                        android:singleLine="true"
+                        android:paddingLeft="5dp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -69,7 +70,8 @@
                         android:inputType="textPassword"
                         android:maxLines="1"
                         android:paddingStart="5dp"
-                        android:singleLine="true" />
+                        android:singleLine="true"
+                        android:paddingLeft="5dp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -81,7 +83,9 @@
                     android:background="@drawable/gradien_btn"
                     android:text="@string/login"
                     android:textColor="@android:color/white"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:onClick="loginButton"
+                    android:clickable="true" />
 
                 <TextView
                     android:id="@+id/register"
@@ -91,7 +95,9 @@
                     android:gravity="center"
                     android:text="@string/create_new"
                     android:textColor="@color/cardview_dark_background"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:onClick="register"
+                    android:clickable="true"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>

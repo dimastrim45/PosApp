@@ -11,16 +11,16 @@
         android:theme="@style/Theme.POS_Apps">
         <activity
             android:name=".registerActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
-            android:name=".loginActivity"
+            android:name=".dashboardActivity"
             android:exported="true" />
         <activity
             android:name=".kategoriActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
-            android:name=".dashboardActivity"
-            android:exported="true">
+            android:name=".loginActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

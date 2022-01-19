@@ -23,7 +23,7 @@ public class registerActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_register);
 
         name = (EditText) findViewById(R.id.name);
         email = (EditText) findViewById(R.id.email);
