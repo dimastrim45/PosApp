@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.POS_Apps">
         <activity
+            android:name=".PosActivity"
+            android:exported="false" />
+        <activity
             android:name=".registerActivity"
             android:exported="true" />
         <activity
@@ -20,7 +23,7 @@
             android:exported="true" />
         <activity
             android:name=".loginActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
