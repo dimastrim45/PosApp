@@ -115,7 +115,7 @@ public class loginActivity extends AppCompatActivity {
 //        }
         for (int i=0; i<2; i++){
             if (emailnya.equals(emaildb[i]) && passwdnya.equals(passwddb[i])){
-                startActivity(new Intent(loginActivity.this, dashboardActivity.class));
+                startActivity(new Intent(loginActivity.this, MainActivity.class));
                 break;
             }
             else {

@@ -11,7 +11,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 public class MainActivity extends AppCompatActivity {
     ImageView GambarGif;
-    private int waktu_loading=5000; // 2000 = 2 detik
+    private int waktu_loading=3000; // 2000 = 2 detik
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent pindah = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(pindah);
+                startActivity(new Intent(MainActivity.this, dashboardActivity.class));
                 finish();
             }
         },waktu_loading);
