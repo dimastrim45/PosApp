@@ -16,6 +16,9 @@
             android:name=".registerActivity"
             android:exported="true" />
         <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
             android:name=".dashboardActivity"
             android:exported="true" />
         <activity
