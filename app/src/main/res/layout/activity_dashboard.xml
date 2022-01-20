@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".dashboardActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -82,7 +82,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Belum punya akun?"
+                            android:text="Any Inquiries?"
                             android:textColor="@color/black"
                             android:textSize="20dp"
                             android:textStyle="italic"/>
@@ -92,14 +92,17 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="15dp"
                             app:cardCornerRadius="10dp"
-                            android:backgroundTint="#0572ff">
+                            android:backgroundTint="#0572ff"
+                            android:onClick="contactUs"
+                            android:clickable="true">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:padding="10dp"
-                                android:text="Register"
-                                android:textColor="@color/white"/>
+                                android:text="Contact Us"
+                                android:textColor="@color/white"
+                                 />
 
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
@@ -177,7 +180,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="15dp">
+                        android:padding="15dp"
+                        android:onClick="kategori"
+                        android:clickable="true">
 
                         <ImageView
                             android:layout_width="50dp"
@@ -301,7 +306,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:padding="15dp">
+                        android:padding="15dp"
+                        android:onClick="pos"
+                        android:clickable="true">
 
                         <ImageView
                             android:layout_width="50dp"

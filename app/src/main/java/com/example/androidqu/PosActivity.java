@@ -1,6 +1,7 @@
-package com.example.androidqu.;
+package com.example.androidqu;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,7 +26,7 @@ public class PosActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_pos);
 
         getSupportActionBar().setTitle("Point Of $ale");
 
@@ -115,5 +116,9 @@ public class PosActivity extends AppCompatActivity {
                 moveTaskToBack(true);
             }
         });
+    }
+
+    public void resetData(View view) {
+        startActivity(new Intent(PosActivity.this, PosActivity.class));
     }
 }
